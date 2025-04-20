@@ -42,3 +42,5 @@ class UserAdmin(BaseUserAdmin, ModelAdmin):
 class GroupAdmin(BaseGroupAdmin, ModelAdmin):
     pass
 ```
+# Sumber
+https://unfoldadmin.com/docs/installation/quickstart/
