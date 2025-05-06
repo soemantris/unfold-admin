@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/sumantris/Sites/YouTube/UnFold DJ Admin/env/bin/python3.12" "$0" "$@"
-' '''
+#!/Users/sumantris/Sites/YouTube/unfold-admin/env/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

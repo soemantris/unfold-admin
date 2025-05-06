@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/sumantris/Sites/YouTube/UnFold DJ Admin/env"
+set -gx VIRTUAL_ENV "/Users/sumantris/Sites/YouTube/unfold-admin/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
