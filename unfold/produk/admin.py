@@ -3,10 +3,14 @@ from unfold.admin import ModelAdmin
 
 from django.core.validators import EMPTY_VALUES
 from django.utils.translation import gettext_lazy as _
-from unfold.contrib.filters.admin import TextFilter, FieldTextFilter
-from unfold.contrib.filters.admin import RangeDateFilter, RangeDateTimeFilter
-from unfold.contrib.filters.admin import AllValuesCheckboxFilter
-
+from unfold.contrib.filters.admin import (
+        TextFilter,
+        FieldTextFilter,
+        RangeDateFilter,
+        RangeDateTimeFilter,
+        AllValuesCheckboxFilter
+    )
+from unfold.paginator import InfinitePaginator
 # Register your models here.
 from . models import Barang, Pesanan, Pembelian
 
@@ -31,6 +35,8 @@ class BarangAdmin(ModelAdmin):
         CustomTextFilter,
         ("harga", AllValuesCheckboxFilter)
     ]
+    paginator = InfinitePaginator
+    show_full_result_count = False
 
 
 @admin.register(Pesanan)

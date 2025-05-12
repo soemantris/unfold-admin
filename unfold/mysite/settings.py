@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+from django.templatetags.static import static
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -130,3 +130,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # unfold konfigurasi untuk sidebar khusus pelanggan 🙏🏼
 
+UNFOLD = {
+    "STYLES": [
+        lambda request: static("css/style.css"),
+    ],
+    "DASHBOARD_CALLBACK": "core.views.dashboard_callback",
+}
